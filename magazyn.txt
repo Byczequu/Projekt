@@ -1,5 +1,5 @@
-    001
-Młot pneumatyczny
+001
+Mlot pneumatyczny
 1000W
 *
 002
@@ -8,6 +8,6 @@ Wiertarka udarowa
 Zasilanie sieciowe
 *
 003
-Piła tarczowa
+Pila tarczowa
 2000W
 *

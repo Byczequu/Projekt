@@ -3,12 +3,10 @@
 using namespace std;
 
 int main() {
-    //sigma sigma
-
     vector<Sprzet> magazyn = wczytajBaze("magazyn.txt");
     
     size_t indeks;
-    cout << "Podaj numer sprzętu do wyświetlenia: ";
+    cout << "Podaj numer sprzetu do wyswietlenia: ";
     cin >> indeks;
     
     wyswietlSprzet(magazyn, indeks - 1);

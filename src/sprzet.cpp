@@ -6,7 +6,7 @@ vector<Sprzet> wczytajBaze(const string& nazwaPliku) {
     vector<Sprzet> magazyn;
     ifstream plik(nazwaPliku);
     if (!plik) {
-        cerr << "Nie można otworzyć pliku!" << endl;
+        cerr << "Nie mozna otworzyc pliku!" << endl;
         return magazyn;
     }
 
@@ -29,11 +29,11 @@ vector<Sprzet> wczytajBaze(const string& nazwaPliku) {
 
 void wyswietlSprzet(const vector<Sprzet>& magazyn, size_t indeks) {
     if (indeks < magazyn.size()) {
-        cout << "Sprzęt nr " << indeks + 1 << ":\n";
+        cout << "Sprzet nr " << indeks + 1 << ":\n";
         for (const string& linia : magazyn[indeks].dane) {
             cout << linia << endl;
         }
     } else {
-        cout << "Nie ma takiego sprzętu w bazie!" << endl;
+        cout << "Nie ma takiego sprzetu w bazie!" << endl;
     }
 }
