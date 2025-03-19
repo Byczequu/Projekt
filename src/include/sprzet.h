@@ -5,9 +5,15 @@
 #include <string>
 using namespace std;
 
-struct Sprzet {
-    vector<string> dane;
+
+class Sprzet {
+public:
+    vector<string> dane; 
 };
+
+void menuStart();
+void menuKlienci();
+void menuMagazyn();
 
 vector<Sprzet> wczytajBaze(const string& nazwaPliku);
 void wyswietlSprzet(const vector<Sprzet>& magazyn, size_t indeks);
