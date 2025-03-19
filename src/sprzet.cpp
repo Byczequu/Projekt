@@ -5,11 +5,11 @@
 
 using namespace std;
 
-vector<Sprzet> wczytajBaze(const string& nazwaPliku) {
+vector<Sprzet> wczytajBaze(const string& Baza_danych) {
     vector<Sprzet> magazyn;
-    ifstream plik(nazwaPliku);
+    ifstream plik(Baza_danych);
     if (!plik) {
-        cerr << "Nie mozna otworzyc pliku!" << endl;
+        cout << "Nie mozna otworzyc pliku!" << endl;
         return magazyn;
     }
 
@@ -27,7 +27,7 @@ vector<Sprzet> wczytajBaze(const string& nazwaPliku) {
         magazyn.push_back(aktualny);
     }
 
-    plik.close(); // Jawne zamknięcie pliku
+    plik.close(); 
     return magazyn;
 }
 
@@ -55,8 +55,8 @@ void menuKlienci() {
         cout << "0. Powrot\n";
         cout << "Wybierz opcje: ";
         while (!(cin >> wybor)) {
-            cin.clear(); // Czyszczenie błędu
-            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Ignorowanie nieprawidłowego wejścia
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Nieprawidlowy wybor. Sprobuj ponownie: ";
         }
 
