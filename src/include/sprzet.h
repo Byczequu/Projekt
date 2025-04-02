@@ -1,21 +1,14 @@
-#ifndef B52A049F_66FC_46FB_8D9F_9FEA665BBC28
-#define B52A049F_66FC_46FB_8D9F_9FEA665BBC28
+#ifndef D4BDF232_DAC6_4864_9142_54972470F713
+#define D4BDF232_DAC6_4864_9142_54972470F713
 
+#include <iostream>
 #include <vector>
 #include <string>
 using namespace std;
 
-
 class Sprzet {
 public:
-    vector<string> dane; 
+    vector<string> dane;
 };
 
-void menuStart();
-void menuKlienci();
-void menuMagazyn();
-
-vector<Sprzet> wczytajBaze(const string& nazwaPliku);
-void wyswietlSprzet(const vector<Sprzet>& magazyn, size_t indeks);
-
-#endif /* B52A049F_66FC_46FB_8D9F_9FEA665BBC28 */
+#endif /* D4BDF232_DAC6_4864_9142_54972470F713 */
